@@ -1,0 +1,59 @@
+1 - tạo dự án kshjksdhfh
+cd đường_dẫn_tới_dự_án
+git init
+git add .
+git commit -m "3"
+git branch -M main
+git remote add origin https://github.com/username/tên_repository.git
+git push -u origin main
+
+(
+    Thêm tệp .gitignore:
+Trước khi chạy git add ., tạo tệp .gitignore để bỏ qua các tệp/thư mục không cần thiết như:
+
+css
+Copy
+Edit
+# Tệp/thư mục tạm thời
+*.log
+*.pyc
+__pycache__/
+.env
+node_modules/
+venv/
+Lưu ý: Sử dụng git add .gitignore để thêm tệp này.
+)
+
+2 - cập nhật dự án 
+git add .
+git commit -m "10:50 10-2-2025"
+git push
+
+========================================================================================
+1- Tải sự đường_dẫn_tới_dự_án
+git clone URL_REPOSITORY
+git clone https://github.com/thaisung/Vinh_Vu_Luxury_Fashion_16_1_2025.git .
+
+2 - cập nhật dự án mới nhất
+git pull
+
+3- thêm 
+touch .gitignore
+mở 
+nano .gitignore
+
+4- thêm tên tác giả
+git config --global user.email "vuthaind@gmail.com"
+git config --global user.name "Thai Pt"
+
+
+
+✅ Cách nhanh nhất: Xóa file untracked rồi pull
+🚨 Lưu ý: Cách này sẽ xóa toàn bộ file chưa được theo dõi! Nếu cần giữ lại, hãy sao lưu trước.
+
+sh
+Copy
+Edit
+git clean -df
+git reset --hard HEAD
+git pull origin <branch_name>
